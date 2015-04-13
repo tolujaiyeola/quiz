@@ -1,0 +1,21 @@
+<h1>New Idea Post</h1>
+<!-- 
+<%= form_for @idea_post do |f| %>
+  <p>title: <%= f.text_field :title %></p>
+  <p>body: <%= f.text_area :body %></p>
+  <%= f.submit %>
+<% end %> -->
+
+<%= form_for @idea_post, :html => {:class => "form-horizontal center"} do |f| %>
+<div class="col-md-8">
+  Title:*<br>
+  <%= f.text_field :title %><br>
+</div>
+<div class="col-md-8">
+  Body:*<br>
+  <%= f.text_area :body %><br>
+</div>
+<div class="col-md-8">
+  <%= f.submit %>
+</div>
+<% end %>

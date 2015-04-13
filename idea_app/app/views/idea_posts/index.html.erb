@@ -1,0 +1,11 @@
+<h1>Ideas</h1>
+
+<hr>
+
+<% @idea_posts.each do |idea_post| %>
+  <p>
+    <%= idea_post.title %> 
+    <%= link_to "show", idea_post_path(idea_post.id) %>
+  </p>
+  <hr>
+<% end %>

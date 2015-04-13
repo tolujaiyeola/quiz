@@ -1,0 +1,3 @@
+class IdeaPostController < ApplicationController
+
+end
